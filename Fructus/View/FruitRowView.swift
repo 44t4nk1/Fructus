@@ -18,6 +18,8 @@ struct FruitRowView: View {
             Image(fruit.image)
                 .renderingMode(.original)
                 .resizable()
+                .padding(.horizontal, 5)
+                .padding(.vertical, 10)
                 .frame(width: 80, height: 80, alignment: .center)
                 .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 3, x: 2, y: 2)
                 .background(LinearGradient(gradient: Gradient(colors: fruit.gradientColors), startPoint: .top, endPoint: .bottom))
