@@ -32,7 +32,8 @@ struct ContentView: View {
                                         SettingsView()
                                     }
             )
-        } //: NAVIGATION
+        }//: NAVIGATION
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
